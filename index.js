@@ -9,7 +9,7 @@ const connectDB = require('./utils/db');
 connectDB();
 
 const app = express();
-const PORT = 3000;
+const PORT = 5050;
 
 app.use(methodOverride('_method'));
 
