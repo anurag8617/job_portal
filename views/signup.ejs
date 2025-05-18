@@ -10,7 +10,12 @@
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
     <style>
         canvas{
-            background-color: #dbf0ec;
+            /* background-color: #09453a; */
+            /* background: linear-gradient(0deg, #3498db, #e74c3c); */
+            /* background: linear-gradient(135deg, #0d0d2b, #1b1b3a, #2d2d52, #050014); */
+            background: radial-gradient(circle at 30% 30%, rgba(110, 30, 150, 0.6), transparent),
+            radial-gradient(circle at 70% 70%, rgba(60, 130, 180, 0.6), transparent),
+            #050014;
         }
     </style>
   </head>
@@ -19,68 +24,57 @@
     <div class="row">
       <canvas class="col-6"></canvas> 
 
+    <div class="col-4 ml-auto mr-auto ">
 
-      <div class="col-4 ">
-        
-        <div class="" id="UsermodelRegister" tabindex="-1" role="dialog" aria-labelledby="modelTitleId" aria-hidden="true">
-  <div class="modal-dialog" role="document">
-      <div class="modal-content">
-          <div class="modal-header">
-              <h5 class="modal-title">User Registration</h5>
-                  <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                      <span aria-hidden="true">&times;</span>
-                  </button>
-          </div>
-          <div class="modal-body">
-            <form action="/register" method="post">
-              <div class="group mb-5">
-                <input required type="text" name="name" class="input">
-                <span class="highlight"></span>
-                <span class="bar"></span>
-                <label>Name</label>
-              </div>
-              <div class="group mb-5">
-                <input required type="email" name="email" class="input">
-                <span class="highlight"></span>
-                <span class="bar"></span>
-                <label>Email</label>
-              </div>
-              <div class="group mb-5">
-                <input required type="text" name="phone" class="input">
-                <span class="highlight"></span>
-                <span class="bar"></span>
-                <label>Phone</label>
-              </div>
-              <div class="group mb-5">
-                <input required type="text" name="password" class="input">
-                <span class="highlight"></span>
-                <span class="bar"></span>
-                <label>Password</label>
-              </div>
-                <div class="form-group">
-                  Gender
-                  <select class="form-control" name="gender" id="">
-                    <option>male</option>
-                    <option>female</option>
-                  </select>
+            <div class="" id="UsermodelRegister" tabindex="-1" role="dialog" aria-labelledby="modelTitleId" aria-hidden="true">
+                <div class="modal-dialog" role="document">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <h5 class="modal-title">User Registration</h5>
+                                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                    <span aria-hidden="true">&times;</span>
+                                </button>
+                        </div>
+                        <div class="modal-body">
+                            <form action="/register" method="post">
+                            <div class="group mb-5">
+                                <input required type="text" name="name" class="input">
+                                <span class="highlight"></span>
+                                <span class="bar"></span>
+                                <label>Name</label>
+                            </div>
+                            <div class="group mb-5">
+                                <input required type="email" name="email" class="input">
+                                <span class="highlight"></span>
+                                <span class="bar"></span>
+                                <label>Email</label>
+                            </div>
+
+                            <div class="group mb-5">
+                                <input required type="text" name="password" class="input">
+                                <span class="highlight"></span>
+                                <span class="bar"></span>
+                                <label>Password</label>
+                            </div>
+                                <div class="form-group">
+                                Gender
+                                <select class="form-control" name="gender" id="">
+                                    <option>male</option>
+                                    <option>female</option>
+                                </select>
+                                </div>
+                                <div class="form-group">
+                                Address
+                                <textarea class="form-control" name="address" id="" rows="3"></textarea>
+                                <small id="emailHelpId" class="form-text text-muted">*</small>
+                                </div>
+                                <button type="submit" class="btn btn-primary btn-block">Submit</button>
+                            </form>
+                        </div>
+                        
+                    </div>
                 </div>
-                <div class="form-group">
-                  Address
-                  <textarea class="form-control" name="address" id="" rows="3"></textarea>
-                  <small id="emailHelpId" class="form-text text-muted">*</small>
-                </div>
-                <button type="submit" class="btn btn-primary">Submit</button>
-            </form>
-          </div>
-          <div class="modal-footer">
-              <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-              <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#UsermodelRegister">
-                Register
-            </button>
-          </div>
-      </div>
-  </div>
-</div>
+            </div>
 
       </div>
     </div>
